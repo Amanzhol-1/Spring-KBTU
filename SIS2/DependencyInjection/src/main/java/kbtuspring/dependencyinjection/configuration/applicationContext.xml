@@ -1,0 +1,6 @@
+<beans>
+    <bean id="item" class="kbtuspring.dependencyinjection.model.ItemImpl" />
+    <bean id="store" class="kbtuspring.dependencyinjection.model.Store">
+        <constructor-arg ref="item"/>
+    </bean>
+</beans>
